@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Serif:ital,opsz,wght@0,8..144,100..900;1,8..144,100..900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+@keyframes colorChange {
+    0% { background:linear-gradient(to right,rgb(8, 8, 249),rgb(248, 8, 8) ) }
+    25% { background:linear-gradient(to right,rgb(251, 121, 70),rgb(91, 169, 247)) }
+    
+    50% { background:linear-gradient(to right,rgb(248, 77, 202),rgb(66, 248, 133)) }
+    75% { background:linear-gradient(to right,rgb(46, 141, 165),rgb(95, 36, 89)) }
+    100%{ background:linear-gradient(to right,rgb(142, 214, 250),rgb(215, 86, 238)) }
+   
+}
+body{
+    width: 100%;
+    height: 100%;
+    animation: colorChange 10s infinite;
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    flex-direction: column;
+    border-radius: 20px;
+}
+#logo{
+    width: 40vw;
+    height: 60vh;
+    border-radius: 100%;
+    filter:contrast(100%)   ;
+
+}
+h1{
+    color: white;
+    font-family: "Roboto Serif", serif;
+}
+#name{
+    color: rgb(245, 21, 58);
+    font-size: 45px;
+}
+#ai{
+    font-size: 45px;
+    color: aqua;
+}
+#btn{
+    width: 25%;
+    background: linear-gradient(to right,rgb(46,46,165),rgb(244,94,94));
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    font-size: 20px;
+    border-radius: 20px;
+    color: white;
+    box-shadow: 2px 2px 2px rgb(46, 46, 165),2px 2px 2px rgb(244, 94, 94) ;
+    border: none;
+    transition: all 0.5s;
+    cursor: pointer;
+
+
+
+    
+}
+#btn:hover{
+    box-shadow: 2px 2px 20px rgb(46, 46, 165),2px 2px 20px rgb(244, 94, 94) ;
+    letter-spacing: 2px;
+    transform: scale(1.1);
+    transition: transform 0.3s ease;
+}
+#start-interaction{
+    width: 15%;
+    background: linear-gradient(to right,rgb(46, 46, 165),rgb(244, 94, 94));
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    font-size: 20px;
+    border-radius: 20px;
+    color: white;
+    box-shadow: 2px 2px 2px rgb(46, 46, 165),2px 2px 2px rgb(244, 94, 94) ;
+    border: none;
+    transition: all 0.5s;
+    cursor: pointer;
+    border-radius: 100px;
+
+
+}
+#start-interaction:hover{
+    box-shadow: 2px 2px 20px rgb(46, 46, 165),2px 2px 20px rgb(244, 94, 94) ;
+    letter-spacing: 2px;
+    transform: scale(1.1);
+    transition: transform 0.3s ease;
+    
+
+}
+@media only screen and (max-width: 600px) {
+    body {
+        flex-direction: column;
+        gap: 20px;
+        padding: 10px;
+    }
+
+    #logo {
+        width: 80vw;
+        height: 40vh;
+    }
+
+    h1 {
+        font-size: 24px;
+    }
+
+    #name, #ai {
+        font-size: 24px;
+    }
+
+    #btn, #start-interaction {
+        width: 80%;
+        font-size: 18px;
+        padding: 10px;
+    }
+}
+
+
